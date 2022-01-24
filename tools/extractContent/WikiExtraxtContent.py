@@ -15,9 +15,6 @@ import sys
 from tqdm import tqdm
 
 
-# In[104]:
-
-
 path = sys.argv[1]
 
 
@@ -43,8 +40,6 @@ def decompressedFile(dirpath,directory):
     print("Terminated decomppress for ", directory )
 
 
-# In[107]:
-
 
 def createDataframe(dirpath,pathOutput,nameDf):
     df = pd.DataFrame(columns=('title', 'Descr'))
@@ -66,8 +61,6 @@ def createDataframe(dirpath,pathOutput,nameDf):
     print("Saved the dataframe for",nameDf )
 
 
-# In[108]:
-
 
 def sliptWorld(listOfItWord,df):
     for itWord in listOfItWord:
@@ -81,8 +74,6 @@ def sliptWorld(listOfItWord,df):
                         ignore_index = True)
     return df
 
-
-# In[109]:
 
 
 os.chdir(path)
@@ -102,7 +93,6 @@ for directory in subdirectory:
     createDataframe(newPath,path_output,directory)
 
 
-# In[ ]:
 
 
 

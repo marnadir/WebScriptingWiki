@@ -3,7 +3,16 @@
 
 The script creates xlsx files from decompressed file obtainted by the script WikiExtractor.py.
 
-Remaind the WikiExtractor.py get as input a Wikipedia dump file and generetes a set of compressed file.
+
+## Usage
+
+### Wikiextractor
+The script is invoked with set of folders which itself contains set of compressed files:
+
+    python WikiExtraxtContent.py <path the set of folder>
+
+
+Remaind the WikiExtractor.py get as input a Wikipedia dump file and generetes a set of folders which itself contains set of compressed files.
 
 Each file will contain several documents in the format:
 
